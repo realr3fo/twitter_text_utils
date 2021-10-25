@@ -124,7 +124,7 @@ def print_vk(lst):
     fmt = '%'+str(longest_key)+'s -> %s'
     # Do actual printing
     for k,v in lst:
-        print fmt % (k,v)
+        print(fmt % (k,v))
 
 
 def word_freq(text):
@@ -342,6 +342,6 @@ def plot_word_histogram(freqs, show=10, title=None):
 def summarize_centrality(centrality):
     c = centrality.items()
     c.sort(key=lambda x:x[1], reverse=True)
-    print '\nGraph centrality'
+    print('\nGraph centrality')
     for node, cent in c:
-        print "%15s: %.3g" % (node, float(cent))
+        print("%15s: %.3g" % (node, float(cent)))
