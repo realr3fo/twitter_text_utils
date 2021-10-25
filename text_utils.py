@@ -170,12 +170,12 @@ def summarize_freq_hist(freqs, n=10):
     """
 
     items = sort_freqs(freqs) if isinstance(freqs, dict) else freqs
-    print 'Number of unique words:',len(freqs)
-    print
-    print '%d least frequent words:' % n
+    print('Number of unique words:',len(freqs))
+    print()
+    print('%d least frequent words:' % n)
     print_vk(items[:n])
-    print
-    print '%d most frequent words:' % n
+    print()
+    print('%d most frequent words:' % n)
     print_vk(items[-n:])
 
 
